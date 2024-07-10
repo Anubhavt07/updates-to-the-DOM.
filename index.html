@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced CSS and Responsive Design</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+      <div class="container text-center">
+        <h1>Welcome to Our Website</h1>
+        <p>Creating beautiful and responsive designs</p>
+      </div>
+    </section>
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          We are a team of dedicated developers and designers. Welcome to
+          [Responsive css], where innovation meets dedication. Our mission is to
+          [insert mission/purpose], providing exceptional [insert key features
+          or services] to [target audience]. At [Responsive css], we believe in
+          the power of [core values or principles], striving to [describe what
+          sets you apart]. Our team of passionate and skilled professionals
+          works tirelessly to ensure that our [products/services] meet the
+          highest standards of quality and reliability. Since our inception, we
+          have [mention any notable achievements or milestones]. Our commitment
+          to excellence and customer satisfaction drives us to continuously
+          improve and innovate. Thank you for choosing [Responsive css]. We look
+          forward to serving you and making a positive impact together.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <h3>1. Web development</h3>
+            <p>
+              Web development involves creating websites and web applications
+              for the internet or an intranet. This process encompasses several
+              disciplines, including web design, web content development,
+              client-side/server-side scripting, and network security
+              configuration. Here’s a breakdown of the core areas of web
+              development:
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3>2. Software Development</h3>
+            <p>
+              Software development involves the process of designing, creating,
+              deploying, and maintaining software applications and systems. It
+              encompasses a wide range of activities and disciplines, from
+              understanding requirements and writing code to testing,
+              deployment, and maintenance. Here's a comprehensive overview of
+              software development:
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3>3. Languages</h3>
+            <p>
+              In coding, programming languages are the tools used to write
+              instructions that a computer can understand and execute. They
+              provide the necessary syntax and semantics to perform various
+              computational tasks, from simple calculations to complex data
+              processing. Here's a detailed overview of programming languages:
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="py-5">
+      <div class="container">
+        <h2>Our Portfolio</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="https://i.ytimg.com/vi/MIYQR-Ybrn4/maxresdefault.jpg"
+              class="img-fluid"
+              alt="Weather app"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAABYlBMVEX///+brLx/f3/x8fF6enru7u6drr/19fW7u7uAf36LlqCuvMbx8vD18/f+//36+vquvMV2dnaFhYWfn5+YprP///qXl5ff39/W1ta0tLSNjY3m5ub8///c3NzGxsapqanQ0NDFxcWurq7///P4twCRkZFra2v4+v/o6/B7fICam5rd29QyNjZUVk+kpKMQBgA2MizH2vmQseV2oO6gvu3f6vvk8ufL48/g7/VsmucmePcweOlLju2f0a4AliRNi/XT5vkAnDl6pej219HyxsD65t/8+uX56cG1yfTlS0TkGxPscm704ZT13oAfevEobejmhHnvIiHqGQDnNDTrmI7wzEDuzVDv39zpPy3ldGnsq6D8x0HxwxTgZVrwhnr8wQDO5eHtY2Obw/Dzk5FekefdSi/21HTA2ubruarcjXvcVkeStvT26K2u0r+mp8zQ0t2EhLa5u9eVmMTHx9fAw+Sdn7klXS+WAAAMtElEQVR4nO2ci2PaxhnAL0iK1BqkSKrQ+4GwA6Ebm12ndUzaZLHduF5LXm7qtskeaZe2yxaV0vz/+04nwGCwfR0I0dwvCehxOt39/N2nE7FAVxiXBi27AasEk0UBk0UBk0UBk0XBUNZVxkwmZb33LmMmE7KuvnujNH/4eVZ2Y+I9L26U+PcmZZXemScgSi05jgavmMsdpDnTSuL24rocUtc7G3Nt6MVAk6bImuvPQ21ZIkKKUHMuHV68pMzY4UScjBBX0/gSryNtXm28HNMi68ZcZfEBUqJQt32E7MvamiVLtZEcxXpsIUXnc5eFB8liZakRCkoqxAHvuANbPH/K2ukVsvzOSNZYyRJvI19TYZuqCag1lDWruvGD/38WLosPUU3NllXiilfbdljKNqpabLfUzKGq4x2QrzJZaim026d67CB/UBcvDYYhPiom1WkOrltXs9paduyopfmxeFmCcCpw8AsMJUyUrmgmXoYxVUq9Ymox0ogsPoJdCElD2dGpcTfIWXw8rE413So+gksd6go+2NXmF10Ll+VMJipeQpamliRkwnaNU2JerZoo5HGvLee62lYEhcjiLRSr16F8bVAD558OlFQWrs65XrKRy5dUi0O2qjqimZqE06gtTpxfXlu0LGhzdTDGMHxpAwW4x2ob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"
+              class="img-fluid"
+              alt="Google Search Clone"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/660/067/datas/original.png"
+              class="img-fluid"
+              alt="Github User Search Website"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $("a.nav-link").on("click", function (e) {
+        if (this.hash !== "") {
+          e.preventDefault();
+          const hash = this.hash;
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+    </script>
+
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="text-center py-4">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
